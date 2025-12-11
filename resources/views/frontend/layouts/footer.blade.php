@@ -10,7 +10,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 						<a href="/">
-    <img src="{{ asset('/storage/photos/1/logo2.png') }}" alt="logo" width="250" style="margin-bottom: 30px;">
+    <img src="{{ asset('/images/logo.png') }}" alt="logo" width="250" style="margin-bottom: 30px;">
 </a>
 
 							@php
