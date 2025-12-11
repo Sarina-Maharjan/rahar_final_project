@@ -105,10 +105,10 @@
                                             <span>Total</span>
                                             @if (isset($cookie_rate) && isset($symbol))
                                                 <span
-                                                    class="total-amount">{{ $symbol }}{{ number_format(Helper::totalWishlistPrice() / $cookie_rate, $symbol == 'Rs' || $symbol == '₹' ? 2 : 3) }}</span>
+                                                    class="total-amount">${{ number_format(Helper::totalWishlistPrice() / $cookie_rate, $symbol == 'Rs' || $symbol == '₹' ? 2 : 3) }}</span>
                                             @else
                                                 <span
-                                                    class="total-amount">{{ $user_currency_symbol }}{{ number_format(Helper::totalWishlistPrice() / $user_currency_rate_to_npr, $user_currency_symbol == 'Rs' || $user_currency_symbol == '₹' ? 2 : 3) }}</span>
+                                                    class="total-amount">${{ number_format(Helper::totalWishlistPrice() / $user_currency_rate_to_npr, $user_currency_symbol == 'Rs' || $user_currency_symbol == '₹' ? 2 : 3) }}</span>
                                             @endif
 
                                         </div>
@@ -152,10 +152,10 @@
                                             <span>Total</span>
                                             @if (isset($cookie_rate) && isset($symbol))
                                                 <span
-                                                    class="total-amount">{{ $symbol }}{{ number_format(Helper::totalCartPrice() / $cookie_rate, $symbol == 'Rs' || $symbol == '₹' ? 2 : 3) }}</span>
+                                                    class="total-amount">${{ number_format(Helper::totalCartPrice() / $cookie_rate, $symbol == 'Rs' || $symbol == '₹' ? 2 : 3) }}</span>
                                             @else
                                                 <span
-                                                    class="total-amount">{{ $user_currency_symbol }}{{ number_format(Helper::totalCartPrice() / $user_currency_rate_to_npr, $user_currency_symbol == 'Rs' || $user_currency_symbol == '₹' ? 2 : 3) }}</span>
+                                                    class="total-amount">${{ number_format(Helper::totalCartPrice() / $user_currency_rate_to_npr, $user_currency_symbol == 'Rs' || $user_currency_symbol == '₹' ? 2 : 3) }}</span>
                                             @endif
                                         </div>
                                         <a href="{{ route('checkout') }}" class="btn animate">Checkout</a>
